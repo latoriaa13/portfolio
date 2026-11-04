@@ -102,14 +102,14 @@ h1 { margin: 0 0 22px; font-size: clamp(4rem, 8vw, 7.4rem); letter-spacing: -0.0
 .project-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .photo-pair { display: grid; grid-template-columns: 1.12fr .88fr; gap: 4px; }
 .photo-pair img:last-child { object-position: 50% center; }
-.donorex-gallery { display: grid; grid-template-columns: 1.12fr .88fr; grid-template-rows: 1fr 1fr; gap: 4px; background: white; }
-.project-media .donorex-cover-image { grid-row: 1 / 3; object-fit: contain; padding: clamp(18px, 3vw, 40px); background: white; }
+.donorex-gallery { display: grid; place-items: center; background: white; }
+.project-media .donorex-cover-image { grid-column: 1 / -1; grid-row: 1; object-fit: contain; padding: clamp(28px, 5vw, 72px); background: white; }
 .photo-grid-three { display: grid; grid-template-columns: 1.12fr .88fr; grid-template-rows: 1fr 1fr; gap: 4px; }
 .photo-grid-three img:first-child { grid-row: 1 / 3; }
 .photo-grid-three img:not(:first-child) { min-height: 0; }
-.lescribe-gallery { background: #eaf2ff; }
-.project-media .lescribe-team { object-position: center; }
-.project-media .lescribe-logo { position: absolute; right: 24px; bottom: 24px; width: clamp(96px, 24%, 150px); height: auto; aspect-ratio: 1; padding: 12px; border: 1px solid rgba(51, 120, 224, .14); border-radius: 24px; background: white; box-shadow: 0 16px 40px rgba(32, 84, 160, .2); object-fit: contain; }
+.lescribe-gallery { display: grid; grid-template-rows: 42% 58%; background: #eaf2ff; }
+.project-media .lescribe-logo { min-height: 0; padding: clamp(14px, 2vw, 26px); background: #eaf2ff; object-fit: contain; }
+.project-media .lescribe-team { min-height: 0; padding: 8px; background: white; object-fit: contain; }
 .project-details { display: flex; flex-direction: column; justify-content: center; padding: clamp(34px, 5vw, 62px); }
 .project-meta { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-bottom: 18px; color: var(--muted); font-size: .78rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; }
 .project-meta span + span::before { content: "·"; margin-right: 18px; color: var(--lavender-300); }
@@ -183,10 +183,9 @@ footer a { text-decoration: none; }
   .section-heading { align-items: flex-start; flex-direction: column; gap: 8px; }
   .project-entry { min-height: 0; border-radius: 24px; }
   .project-media { min-height: 380px; }
-  .photo-pair, .photo-grid-three, .donorex-gallery { grid-template-columns: 1fr 1fr; grid-template-rows: 230px 150px; }
+  .photo-pair, .photo-grid-three { grid-template-columns: 1fr 1fr; grid-template-rows: 230px 150px; }
   .photo-pair img:first-child, .photo-grid-three img:first-child { grid-column: 1 / 3; grid-row: 1; }
-  .project-media .donorex-cover-image { grid-column: 1 / 3; grid-row: 1; padding: 16px; }
-  .project-media .lescribe-logo { right: 16px; bottom: 16px; width: 92px; padding: 10px; border-radius: 18px; }
+  .project-media .donorex-cover-image { padding: 30px; }
   .project-details { padding: 34px 24px 38px; }
   .community-list div { grid-template-columns: 1fr; gap: 5px; }
   footer { width: calc(100% - 30px); }
