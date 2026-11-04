@@ -1,19 +1,33 @@
-const menuButton = document.querySelector('.menu-button');
+const menuButton = document.querySelector('.brand-menu-button');
 const nav = document.querySelector('#site-nav');
 
-menuButton.addEventListener('click', () => {
-  const isOpen = nav.classList.toggle('open');
-  menuButton.setAttribute('aria-expanded', String(isOpen));
-});
-
-nav.querySelectorAll('a').forEach((link) => {
-  link.addEventListener('click', () => {
+if (menuButton && nav) {
+  const closeMenu = () => {
     nav.classList.remove('open');
     menuButton.setAttribute('aria-expanded', 'false');
-  });
-});
+  };
 
-document.querySelector('#year').textContent = new Date().getFullYear();
+  menuButton.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('open');
+    menuButton.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  nav.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
+
+  document.addEventListener('click', (event) => {
+    if (!event.target.closest('.site-header')) closeMenu();
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      closeMenu();
+      menuButton.focus();
+    }
+  });
+}
+
+const year = document.querySelector('#year');
+if (year) year.textContent = new Date().getFullYear();
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {

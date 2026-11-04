@@ -36,18 +36,20 @@ img { max-width: 100%; }
   z-index: 20;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: min(1180px, calc(100% - 40px));
   margin: 0 auto;
   padding: 18px 0;
   background: color-mix(in srgb, var(--cream) 88%, transparent);
   backdrop-filter: blur(14px);
 }
-.wordmark { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: var(--lavender-200); color: var(--lavender-700); font-family: "Fraunces", serif; font-weight: 700; text-decoration: none; }
-nav { display: flex; gap: 28px; }
-nav a { color: var(--muted); font-size: 0.92rem; font-weight: 600; text-decoration: none; }
-nav a:hover, nav a:focus-visible { color: var(--lavender-700); }
-.menu-button { display: none; }
+.brand-menu-button { display: grid; place-items: center; width: 48px; height: 48px; padding: 0; overflow: hidden; border: 0; border-radius: 50%; background: white; box-shadow: 0 6px 20px rgba(80, 54, 118, .12); cursor: pointer; transition: transform 180ms ease, box-shadow 180ms ease; }
+.brand-menu-button:hover, .brand-menu-button:focus-visible, .brand-menu-button[aria-expanded="true"] { transform: translateY(-1px); box-shadow: 0 9px 24px rgba(80, 54, 118, .2); outline: 2px solid var(--lavender-300); outline-offset: 3px; }
+.brand-menu-button img { display: block; width: 100%; height: 100%; object-fit: cover; }
+nav { position: absolute; top: 72px; left: 0; display: none; flex-direction: column; gap: 0; min-width: 205px; padding: 10px; border: 1px solid var(--line); border-radius: 18px; background: white; box-shadow: var(--shadow); }
+nav.open { display: flex; }
+nav a { padding: 10px 12px; border-radius: 10px; color: var(--muted); font-size: 0.92rem; font-weight: 600; text-decoration: none; }
+nav a:hover, nav a:focus-visible { color: var(--lavender-700); background: var(--lavender-100); }
 
 .hero {
   position: relative;
@@ -221,10 +223,6 @@ footer a { text-decoration: none; }
 @media (max-width: 680px) {
   body { font-size: 16px; }
   .site-header { width: calc(100% - 30px); }
-  .menu-button { display: inline-flex; padding: 8px 13px; border: 1px solid var(--line); border-radius: 999px; background: white; color: var(--ink); font: inherit; font-size: 0.85rem; font-weight: 700; }
-  nav { position: absolute; top: 70px; right: 0; display: none; flex-direction: column; gap: 0; min-width: 180px; padding: 10px; border: 1px solid var(--line); border-radius: 18px; background: white; box-shadow: var(--shadow); }
-  nav.open { display: flex; }
-  nav a { padding: 10px 12px; }
   .hero { width: calc(100% - 30px); padding-bottom: 90px; }
   h1 { font-size: clamp(3.8rem, 18vw, 5.8rem); }
   .section { padding: 88px 20px; }
