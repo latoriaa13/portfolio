@@ -36,7 +36,7 @@ if (projectDetail) {
     const projectIndex = Math.max(0, projectOrder.indexOf(requestedProject));
 
     try {
-      const response = await fetch('index.html');
+      const response = await fetch('index.html', { cache: 'no-store' });
       const page = new DOMParser().parseFromString(await response.text(), 'text/html');
       const projects = page.querySelectorAll('.project-source .project-entry');
       const selectedProject = projects[projectIndex] || projects[0];
