@@ -28,7 +28,7 @@
       <section class="hero" id="top">
         <div class="hero-copy reveal">
           <p class="eyebrow">Computer Engineering · Applied AI · Embedded Systems</p>
-          <h1>Hi, I’m Ava.</h1>
+          <h1>Hi, I’m Ava</h1>
           <p class="hero-text">I’m a computer engineering student at the Milwaukee School of Engineering. I build AI applications, FPGA hardware systems, and full-stack tools.</p>
           <div class="hero-links">
             <a class="button primary" href="#projects">See my projects</a>
@@ -64,9 +64,10 @@
             <p class="company">Direct Supply · Milwaukee, Wisconsin</p>
           </div>
           <ul>
-            <li>Built an auto-refreshing AI display that pulls project data from Jira and writes plain-language summaries.</li>
-            <li>Developed a Databricks-backed natural-language sales query tool and improved its accuracy through dashboard comparisons.</li>
-            <li>Created a meta-skill that inspects Power BI report files and generates sales-analysis skills using Databricks.</li>
+            <li>Built an auto-refreshing AI display that pulls project data from Jira and generates plain-language summaries from end to end.</li>
+            <li>Developed a Databricks-backed natural-language sales query tool and optimized its accuracy through comparisons with existing dashboards.</li>
+            <li>Created a meta-skill that inspects Power BI report files and automatically generates sales-analysis skills using Databricks.</li>
+            <li>Designed and implemented a skill-sharing system for non-technical users after evaluating multiple approaches.</li>
             <li>Built an MCP connector for internal resources and configured its roles, permissions, and OAuth scopes with Terraform.</li>
             <li>Compiled training and troubleshooting resources for an AI platform release to more than 1,000 employees.</li>
           </ul>
@@ -74,64 +75,134 @@
       </section>
 
       <section class="section projects" id="projects">
-        <div class="section-label reveal">03 · Selected projects</div>
+        <div class="section-heading reveal">
+          <div class="section-label">03 · Projects</div>
+          <p>Most recent to earliest</p>
+        </div>
 
-        <article class="project featured reveal">
-          <div class="project-visual donorex-visual" aria-hidden="true">
-            <div class="donorex-mark">Dono<span>Rex</span></div>
-            <div class="queue-card queue-one"><span>01</span><strong>Renewal call</strong><small>20 min · high priority</small></div>
-            <div class="queue-card queue-two"><span>02</span><strong>Stewardship email</strong><small>10 min · evidence ready</small></div>
-            <div class="queue-card queue-three"><span>03</span><strong>Reactivation</strong><small>15 min · review first</small></div>
-          </div>
-          <div class="project-copy">
-            <div class="award">HackMIT 2026 · GiveCampus Sponsor Winner · Grand Prize</div>
-            <h2>DonoRex</h2>
-            <p>A decision tool for university fundraising teams. DonoRex scores constituent data and builds a ranked, time-budgeted weekly queue with a recommended action, estimated minutes, and evidence for every suggestion.</p>
-            <p>I led the architecture, data pipeline, core logic, APIs, and Microsoft 365 Autopilot integration. The product uses deterministic TypeScript and a greedy optimizer, with approval required before any outreach is sent.</p>
-            <div class="project-tags" aria-label="DonoRex technologies">
-              <span>TypeScript</span><span>Next.js</span><span>Microsoft Graph</span><span>OAuth</span><span>Optimization</span>
+        <div class="project-list">
+          <article class="project-entry reveal">
+            <div class="project-media donorex-gallery">
+              <div class="donorex-cover" role="img" aria-label="DonoRex logo"><span>Dono</span><strong>Rex</strong><small>Donor intelligence, prioritized</small></div>
+              <img src="assets/donorex-1.jpg" alt="The DonoRex team holding their first-place HackMIT award in front of MIT" loading="lazy">
+              <img src="assets/donorex-2.jpg" alt="The DonoRex team at HackMIT" loading="lazy">
             </div>
-            <div class="text-links">
-              <a href="https://plume.hackmit.org/project/cxnvv-kmhmt-hktyj-zuygs" target="_blank" rel="noreferrer">Project page ↗</a>
-              <a href="https://github.com/latoriaa13/HackMIT_Dropbox" target="_blank" rel="noreferrer">Code ↗</a>
+            <div class="project-details">
+              <div class="project-meta"><span>September 2026</span><span>HackMIT</span></div>
+              <div class="award">GiveCampus sponsor track winner · Grand prize</div>
+              <h2>DonoRex</h2>
+              <p>A decision tool for university fundraising teams. DonoRex scores constituent data and builds a ranked, time-budgeted weekly queue with a recommended action, estimated minutes, and evidence for every suggestion.</p>
+              <p>I led the architecture, data pipeline, core logic, APIs, and Microsoft 365 Autopilot integration. The system uses deterministic TypeScript and a greedy optimizer, with approval required before any outreach is sent.</p>
+              <div class="project-tags"><span>TypeScript</span><span>Next.js</span><span>Microsoft Graph</span><span>OAuth</span><span>Optimization</span></div>
+              <div class="text-links">
+                <a href="https://plume.hackmit.org/project/cxnvv-kmhmt-hktyj-zuygs" target="_blank" rel="noreferrer">Project page ↗</a>
+                <a href="https://github.com/latoriaa13/HackMIT_Dropbox" target="_blank" rel="noreferrer">Code ↗</a>
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7507967518070816769/" target="_blank" rel="noreferrer">LinkedIn post ↗</a>
+              </div>
             </div>
-          </div>
-        </article>
-
-        <div class="project-grid">
-          <article class="project-card reveal">
-            <p class="project-number">01</p>
-            <div class="award small">First place</div>
-            <h3>Lescribe</h3>
-            <p>An autonomous medical coding assistant that transcribes doctor-patient conversations and uses a LangGraph multi-agent pipeline with retrieval from embedded coding rules.</p>
-            <ul class="mini-list">
-              <li>Patient-context intake and PHI redaction</li>
-              <li>React and TypeScript Databricks App</li>
-              <li>RAG for coding-rule context</li>
-            </ul>
           </article>
 
-          <article class="project-card reveal">
-            <p class="project-number">02</p>
-            <h3>Single Cycle Processor</h3>
-            <p>A single-cycle processor and embedded robot computer implemented in VHDL, with memory-mapped I/O and seven autonomous behaviors written in ARMv4 assembly.</p>
-            <ul class="mini-list">
-              <li>FPGA synthesis and simulation</li>
-              <li>Custom datapath and control</li>
-              <li>Track following and collision avoidance</li>
-            </ul>
+          <article class="project-entry reveal">
+            <div class="project-media photo-grid-three">
+              <img src="assets/light-hoan-1.jpg" alt="Ava's team at the Milwaukee Art Museum during the Light the Hoan challenge" loading="lazy">
+              <img src="assets/light-hoan-2.jpg" alt="Light the Hoan team presenting its bridge light show" loading="lazy">
+              <img src="assets/light-hoan-3.jpg" alt="The Hoan Bridge illuminated at night" loading="lazy">
+            </div>
+            <div class="project-details">
+              <div class="project-meta"><span>July 2026</span><span>Direct Supply intern challenge</span></div>
+              <h2>Light the Hoan</h2>
+              <p>My intern team designed an original light show for Milwaukee’s Hoan Bridge, translating Direct Supply’s mission into a coordinated visual story. We presented the concept alongside teams from 13 companies.</p>
+              <div class="project-tags"><span>Creative technology</span><span>Team design</span><span>Presentation</span></div>
+              <div class="text-links"><a href="https://www.linkedin.com/feed/update/urn:li:activity:7488760952964710401/" target="_blank" rel="noreferrer">LinkedIn post ↗</a></div>
+            </div>
           </article>
 
-          <article class="project-card reveal">
-            <p class="project-number">03</p>
-            <div class="award small">First place</div>
-            <h3>Qual-V</h3>
-            <p>A real-time manufacturing quality platform that streams video to three YOLO models and supports human-in-the-loop retraining and model replacement.</p>
-            <ul class="mini-list">
-              <li>LiveKit and RayServe inference</li>
-              <li>Roboflow labeling and MLflow feedback</li>
-              <li>React and Databricks dashboards</li>
-            </ul>
+          <article class="project-entry reveal">
+            <div class="project-media photo-grid-three">
+              <img src="assets/lescribe-1.jpg" alt="Persistent Systems Innovation Lab spring 2026 cohort" loading="lazy">
+              <img src="assets/lescribe-2.jpg" alt="A winning team at the Persistent Systems Innovation Lab showcase" loading="lazy">
+              <img src="assets/lescribe-3.jpg" alt="A student team at the Persistent Systems Innovation Lab showcase" loading="lazy">
+            </div>
+            <div class="project-details">
+              <div class="project-meta"><span>February–May 2026</span><span>Persistent Systems MAIC</span></div>
+              <div class="award">First place</div>
+              <h2>Lescribe</h2>
+              <p>An autonomous medical coding assistant that transcribes doctor-patient conversations with AssemblyAI and coordinates specialist agents in LangGraph to generate ICD-10-CM and CPT codes.</p>
+              <p>Semantic retrieval searches more than 500 embedded coding-rule chunks for each case. The HIPAA-conscious React and TypeScript app includes patient context, PHI redaction, and reached 96.9% ICD and 85.6% CPT accuracy on our hand-labeled evaluation set.</p>
+              <div class="project-tags"><span>LangGraph</span><span>RAG</span><span>Databricks</span><span>React</span><span>AssemblyAI</span></div>
+              <div class="text-links"><a href="https://www.linkedin.com/feed/update/urn:li:activity:7457556461817245698/" target="_blank" rel="noreferrer">LinkedIn post ↗</a></div>
+            </div>
+          </article>
+
+          <article class="project-entry reveal">
+            <div class="project-media project-illustration processor-art" role="img" aria-label="Diagram of the processor datapath connecting control, registers, ALU, memory, and robot input and output">
+              <div class="chip control">CONTROL</div><div class="chip registers">REGISTERS</div><div class="chip alu">ALU</div><div class="chip memory">MEMORY</div><div class="chip robot">ROBOT I/O</div>
+              <span class="bus bus-a"></span><span class="bus bus-b"></span><span class="bus bus-c"></span><span class="bus bus-d"></span>
+            </div>
+            <div class="project-details">
+              <div class="project-meta"><span>January–May 2026</span><span>Computer architecture</span></div>
+              <h2>Single Cycle Processor</h2>
+              <p>I built an ARMv4 CPU from scratch in VHDL, including the ALU, register file, immediate extender, rotator, barrel shifter, and combinational control. The design ran on a MAX 10 FPGA with memory-mapped motors, sensors, LEDs, and seven-segment displays.</p>
+              <p>ARM assembly programs drove seven robot behaviors, supported by timing simulations and on-board testing in Quartus.</p>
+              <div class="project-tags"><span>VHDL</span><span>ARMv4</span><span>FPGA</span><span>Quartus</span><span>Embedded I/O</span></div>
+            </div>
+          </article>
+
+          <article class="project-entry reveal">
+            <div class="project-media project-illustration report-art" role="img" aria-label="A simplified medical report flowing through extraction, summarization, validation, and citations">
+              <div class="report-page"><span></span><span></span><span></span><span></span></div>
+              <div class="report-steps"><b>extract</b><i>→</i><b>summarize</b><i>→</i><b>validate</b><i>→</i><b>cite</b></div>
+            </div>
+            <div class="project-details">
+              <div class="project-meta"><span>January 2026</span><span>Hack-4-Health</span></div>
+              <div class="award">Third place</div>
+              <h2>BenMed</h2>
+              <p>A medical report summarization tool built at the MSOE AI Club’s Hack-4-Health, hosted by the Medical College of Wisconsin. MedSpaCy extracts clinical information, Gemini rewrites it in plain language, and a seven-stage validation pipeline checks the result.</p>
+              <p>Exa.ai adds citations so readers can trace unfamiliar terms and claims to supporting sources.</p>
+              <div class="project-tags"><span>Python</span><span>MedSpaCy</span><span>Gemini</span><span>Exa.ai</span><span>Validation</span></div>
+            </div>
+          </article>
+
+          <article class="project-entry reveal">
+            <div class="project-media photo-grid-three">
+              <img src="assets/qualv-1.jpg" alt="Xorbix Innovation Lab fall 2025 cohort" loading="lazy">
+              <img src="assets/qualv-2.jpg" alt="A winning team at the Xorbix Innovation Lab showcase" loading="lazy">
+              <img src="assets/qualv-3.jpg" alt="A student team at the Xorbix Innovation Lab showcase" loading="lazy">
+            </div>
+            <div class="project-details">
+              <div class="project-meta"><span>October–December 2025</span><span>Xorbix MAIC</span></div>
+              <div class="award">First place</div>
+              <h2>Qual-V</h2>
+              <p>A real-time manufacturing quality platform using three YOLO models on Databricks: a 99.5% mAP@50 jar detector, a 94% intact-versus-damaged classifier, and a 78% multiclass damage model.</p>
+              <p>I hand-labeled data in Roboflow and split and fine-tuned the binary classifier. A human-in-the-loop workflow captures feedback, retrains models, and replaces approved versions through the MLflow registry.</p>
+              <div class="project-tags"><span>YOLO</span><span>Databricks</span><span>Roboflow</span><span>MLflow</span><span>React</span></div>
+              <div class="text-links"><a href="https://www.linkedin.com/feed/update/urn:li:activity:7403886602336530432/" target="_blank" rel="noreferrer">LinkedIn post ↗</a></div>
+            </div>
+          </article>
+
+          <article class="project-entry reveal">
+            <div class="project-media project-illustration robot-art" role="img" aria-label="Diagram of a small FPGA robot following a track with collision and infrared sensors">
+              <div class="track"></div><div class="robot-body"><span class="sensor one"></span><span class="sensor two"></span><span class="display">GO</span></div><div class="wheel left"></div><div class="wheel right"></div>
+            </div>
+            <div class="project-details">
+              <div class="project-meta"><span>September–December 2025</span><span>Digital logic</span></div>
+              <h2>Digital Robot</h2>
+              <p>An autonomous robot implemented in VHDL and digital logic on a DE10-Lite FPGA. I integrated motors, infrared and collision sensors, and a breadboarded interface so the robot could follow a track, stop at crossroads, avoid collisions, and show its current action on a seven-segment display.</p>
+              <div class="project-tags"><span>VHDL</span><span>DE10-Lite</span><span>Digital logic</span><span>Sensors</span><span>Breadboarding</span></div>
+            </div>
+          </article>
+
+          <article class="project-entry reveal">
+            <div class="project-media project-illustration vex-art" role="img" aria-label="Illustration of a competition robot with a V5 brain, motors, and sensors">
+              <div class="vex-frame"><span class="vex-brain">V5</span><span class="vex-arm"></span><span class="vex-grip"></span></div><div class="vex-wheel w1"></div><div class="vex-wheel w2"></div>
+            </div>
+            <div class="project-details">
+              <div class="project-meta"><span>August 2024–May 2025</span><span>Competitive robotics</span></div>
+              <div class="award">First place · school competition</div>
+              <h2>VEX Robotics</h2>
+              <p>My partner team designed, built, and programmed a competition robot with VEX V5 parts, motors, sensors, and the V5 Brain. I developed the driver-control behavior in VEXcode C++ and iterated on the mechanical design through competition testing.</p>
+              <div class="project-tags"><span>C++</span><span>VEXcode</span><span>V5 Brain</span><span>Motors</span><span>Sensors</span></div>
+            </div>
           </article>
         </div>
       </section>
