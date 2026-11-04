@@ -128,9 +128,8 @@ h1 { margin: 0 0 22px; font-size: clamp(4rem, 8vw, 7.4rem); letter-spacing: -0.0
 .benmed-gallery { display: grid; grid-template-rows: 42% 58%; background: #e2e5e8; }
 .project-media .benmed-logo { object-fit: contain; padding: clamp(12px, 2vw, 24px); background: #e2e5e8; }
 .project-media .benmed-team { min-height: 0; object-position: center; }
-.qualv-gallery { display: grid; grid-template-rows: 38% 62%; background: #f8f6ef; }
-.project-media .qualv-logo { min-height: 0; padding: clamp(16px, 3vw, 34px); background: #f8f6ef; object-fit: contain; }
-.project-media .qualv-team { min-height: 0; padding: 8px; background: white; object-fit: contain; }
+.qualv-gallery { display: grid; place-items: center; background: white; }
+.project-media .qualv-team { padding: 8px; background: white; object-fit: contain; }
 .track { position: absolute; left: 43%; top: -12%; width: 15%; height: 125%; border-radius: 99px; background: #f9f7ff; transform: rotate(8deg); }.robot-body { position: absolute; z-index: 2; left: 33%; top: 30%; width: 35%; height: 32%; border: 5px solid var(--lavender-700); border-radius: 22px; background: #bda7e4; transform: rotate(8deg); }.display { position: absolute; left: 30%; top: 30%; padding: 8px 14px; border-radius: 6px; background: #251f35; color: #e4ff91; font-family: monospace; font-weight: 700; }.sensor { position: absolute; top: -16px; width: 18px; height: 18px; border-radius: 50%; background: var(--orange); }.sensor.one { left: 22%; }.sensor.two { right: 22%; }.wheel { position: absolute; z-index: 1; top: 41%; width: 9%; height: 22%; border-radius: 12px; background: #302844; transform: rotate(8deg); }.wheel.left { left: 28%; }.wheel.right { right: 27%; }
 .vex-logo-panel { display: grid; place-items: center; background: #000; }
 .project-media .vex-logo-image { object-fit: contain; padding: clamp(22px, 4vw, 58px); background: #000; }
