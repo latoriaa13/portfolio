@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20261103-connect-clean" />
+    <link rel="stylesheet" href="styles.css?v=20261103-foxwatch" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -82,6 +82,7 @@
         </div>
 
         <div class="project-card-grid">
+          <a class="project-card reveal" href="project.html#foxwatch"><div class="project-card-image logo-cover foxwatch-card-cover"><img src="assets/foxwatch-cover.png" alt="FoxWatch fox and waterways logo"></div><div class="project-card-body"><span class="project-card-date">October 2026</span><h2>FoxWatch</h2><span class="project-card-award">MLH Best Use of Vultr</span><span class="project-card-more">View project →</span></div></a>
           <a class="project-card reveal" href="project.html#donorex"><div class="project-card-image logo-cover donorex-card-cover"><img src="assets/donorex-logo.png" alt="DonoRex logo"></div><div class="project-card-body"><span class="project-card-date">September 2026</span><h2>DonoRex</h2><span class="project-card-award">HackMIT winner</span><span class="project-card-more">View project →</span></div></a>
           <a class="project-card reveal" href="project.html#light-the-hoan"><div class="project-card-image portrait-card-cover" style="--cover-image: url('assets/light-hoan-cover.png')"><img src="assets/light-hoan-cover.png" alt="Ava and her Light the Hoan team in front of the Milwaukee skyline" loading="lazy"></div><div class="project-card-body"><span class="project-card-date">July 2026</span><h2>Light the Hoan</h2><span class="project-card-more">View project →</span></div></a>
           <a class="project-card reveal" href="project.html#lescribe"><div class="project-card-image fit-photo"><img src="assets/lescribe-team.png" alt="Lescribe team receiving its first-place award" loading="lazy"></div><div class="project-card-body"><span class="project-card-date">February–May 2026</span><h2>Lescribe</h2><span class="project-card-award">First place</span><span class="project-card-more">View project →</span></div></a>
@@ -93,6 +94,25 @@
         </div>
 
         <div class="project-list project-source" aria-hidden="true">
+          <article class="project-entry reveal">
+            <div class="project-media foxwatch-gallery">
+              <img class="foxwatch-cover-image" src="assets/foxwatch-cover.png" alt="FoxWatch fox and waterways logo">
+            </div>
+            <div class="project-details">
+              <div class="project-meta"><span>October 2026</span><span>HackGB</span></div>
+              <div class="award">Winner · MLH Best Use of Vultr</div>
+              <h2>FoxWatch</h2>
+              <p>An evidence-first platform for investigating algal blooms in the Fox River and Green Bay. FoxWatch brings together live USGS water measurements, Sentinel-2 satellite imagery, scientific research, and understandable AI explanations in one dashboard.</p>
+              <p>The full-stack system uses machine-learning models to estimate bloom probability and chlorophyll fluorescence, validates spatial estimates against withheld boat-survey measurements, and clearly distinguishes measured data, model estimates, and remaining uncertainty.</p>
+              <div class="project-tags"><span>Python</span><span>FastAPI</span><span>React</span><span>TypeScript</span><span>Satellite imagery</span><span>Machine learning</span></div>
+              <div class="text-links">
+                <a href="https://devpost.com/software/foxwatch" target="_blank" rel="noreferrer">Devpost ↗</a>
+                <a href="https://foxwatch.surf" target="_blank" rel="noreferrer">Live demo ↗</a>
+                <a href="https://github.com/FDS-Dark/foxwatch" target="_blank" rel="noreferrer">Code ↗</a>
+              </div>
+            </div>
+          </article>
+
           <article class="project-entry reveal">
             <div class="project-media donorex-gallery">
               <img class="donorex-cover-image" src="assets/donorex-logo.png" alt="DonoRex dinosaur mascot holding a magnifying glass above the DonoRex name">
@@ -264,6 +284,6 @@
       <p>© <span id="year"></span> Ava Latoria</p>
       <a href="#top">Back to top ↑</a>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js?v=20261103-foxwatch"></script>
   </body>
 </html>

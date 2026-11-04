@@ -29,7 +29,7 @@ document.querySelectorAll('.reveal').forEach((element) => observer.observe(eleme
 const projectDetail = document.querySelector('#project-detail');
 
 if (projectDetail) {
-  const projectOrder = ['donorex', 'light-the-hoan', 'lescribe', 'single-cycle-processor', 'benmed', 'qual-v', 'digital-robot', 'vex-robotics'];
+  const projectOrder = ['foxwatch', 'donorex', 'light-the-hoan', 'lescribe', 'single-cycle-processor', 'benmed', 'qual-v', 'digital-robot', 'vex-robotics'];
 
   const loadProject = async () => {
     const requestedProject = window.location.hash.slice(1) || projectOrder[0];
