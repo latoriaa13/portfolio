@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ava Latoria - computer engineering, applied AI, and embedded systems portfolio." />
+    <meta name="theme-color" content="#eee8ff" />
+    <title>Ava Latoria | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Ava Latoria home">AL</a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Computer Engineering · Applied AI · Embedded Systems</p>
+          <h1>Hi, I’m Ava.</h1>
+          <p class="hero-text">I’m a computer engineering student at the Milwaukee School of Engineering. I build AI applications, FPGA hardware systems, and full-stack tools.</p>
+          <div class="hero-links">
+            <a class="button primary" href="#projects">See my projects</a>
+            <a class="button secondary" href="https://www.linkedin.com/in/ava-latoria/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+        <div class="portrait-wrap reveal" aria-label="Portrait of Ava Latoria">
+          <div class="portrait" role="img" aria-label="Ava Latoria smiling in a black blazer"></div>
+          <span class="sparkle sparkle-one" aria-hidden="true">✦</span>
+          <span class="sparkle sparkle-two" aria-hidden="true">✦</span>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="section-label reveal">01 · About</div>
+        <div class="about-grid">
+          <h2 class="reveal">Engineering across software and hardware.</h2>
+          <div class="about-copy reveal">
+            <p>I enjoy turning complicated technical problems into useful, understandable systems. My work has ranged from multi-agent AI pipelines and Databricks applications to a VHDL processor running an autonomous robot.</p>
+            <p>I’m pursuing a B.S. in Computer Engineering at MSOE, with an intended master’s focus in machine learning. Outside class and work, I’m active in MSOE AI Club, Alpha Omega Epsilon, and choir.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section experience" id="experience">
+        <div class="section-label reveal">02 · Experience</div>
+        <div class="experience-card reveal">
+          <div class="experience-heading">
+            <div>
+              <p class="eyebrow">February 2026 - Present</p>
+              <h2>Applied AI Intern</h2>
+            </div>
+            <p class="company">Direct Supply · Milwaukee, Wisconsin</p>
+          </div>
+          <ul>
+            <li>Built an auto-refreshing AI display that pulls project data from Jira and writes plain-language summaries.</li>
+            <li>Developed a Databricks-backed natural-language sales query tool and improved its accuracy through dashboard comparisons.</li>
+            <li>Created a meta-skill that inspects Power BI report files and generates sales-analysis skills using Databricks.</li>
+            <li>Built an MCP connector for internal resources and configured its roles, permissions, and OAuth scopes with Terraform.</li>
+            <li>Compiled training and troubleshooting resources for an AI platform release to more than 1,000 employees.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section projects" id="projects">
+        <div class="section-label reveal">03 · Selected projects</div>
+
+        <article class="project featured reveal">
+          <div class="project-visual donorex-visual" aria-hidden="true">
+            <div class="donorex-mark">Dono<span>Rex</span></div>
+            <div class="queue-card queue-one"><span>01</span><strong>Renewal call</strong><small>20 min · high priority</small></div>
+            <div class="queue-card queue-two"><span>02</span><strong>Stewardship email</strong><small>10 min · evidence ready</small></div>
+            <div class="queue-card queue-three"><span>03</span><strong>Reactivation</strong><small>15 min · review first</small></div>
+          </div>
+          <div class="project-copy">
+            <div class="award">HackMIT 2026 · GiveCampus Sponsor Winner · Grand Prize</div>
+            <h2>DonoRex</h2>
+            <p>A decision tool for university fundraising teams. DonoRex scores constituent data and builds a ranked, time-budgeted weekly queue with a recommended action, estimated minutes, and evidence for every suggestion.</p>
+            <p>I led the architecture, data pipeline, core logic, APIs, and Microsoft 365 Autopilot integration. The product uses deterministic TypeScript and a greedy optimizer, with approval required before any outreach is sent.</p>
+            <div class="project-tags" aria-label="DonoRex technologies">
+              <span>TypeScript</span><span>Next.js</span><span>Microsoft Graph</span><span>OAuth</span><span>Optimization</span>
+            </div>
+            <div class="text-links">
+              <a href="https://plume.hackmit.org/project/cxnvv-kmhmt-hktyj-zuygs" target="_blank" rel="noreferrer">Project page ↗</a>
+              <a href="https://github.com/latoriaa13/HackMIT_Dropbox" target="_blank" rel="noreferrer">Code ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <p class="project-number">01</p>
+            <div class="award small">First place</div>
+            <h3>Lescribe</h3>
+            <p>An autonomous medical coding assistant that transcribes doctor-patient conversations and uses a LangGraph multi-agent pipeline with retrieval from embedded coding rules.</p>
+            <ul class="mini-list">
+              <li>Patient-context intake and PHI redaction</li>
+              <li>React and TypeScript Databricks App</li>
+              <li>RAG for coding-rule context</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal">
+            <p class="project-number">02</p>
+            <h3>Single Cycle Processor</h3>
+            <p>A single-cycle processor and embedded robot computer implemented in VHDL, with memory-mapped I/O and seven autonomous behaviors written in ARMv4 assembly.</p>
+            <ul class="mini-list">
+              <li>FPGA synthesis and simulation</li>
+              <li>Custom datapath and control</li>
+              <li>Track following and collision avoidance</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal">
+            <p class="project-number">03</p>
+            <div class="award small">First place</div>
+            <h3>Qual-V</h3>
+            <p>A real-time manufacturing quality platform that streams video to three YOLO models and supports human-in-the-loop retraining and model replacement.</p>
+            <ul class="mini-list">
+              <li>LiveKit and RayServe inference</li>
+              <li>Roboflow labeling and MLflow feedback</li>
+              <li>React and Databricks dashboards</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section skills" id="skills">
+        <div class="section-label reveal">04 · Skills</div>
+        <div class="skills-grid">
+          <div class="skill-group reveal">
+            <h3>Programming</h3>
+            <p>Python, Java, JavaScript, TypeScript, React, C++, SQL, ARMv4 Assembly, CSS, Git</p>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Hardware</h3>
+            <p>VHDL, FPGA, Quartus, digital logic, circuits, breadboarding, soldering</p>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Machine learning</h3>
+            <p>LangGraph, Databricks, OpenAI API, Gemini API, RAG, prompt engineering, MCP connectors</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section education">
+        <div class="section-label reveal">05 · Education & community</div>
+        <div class="education-grid">
+          <div class="education-main reveal">
+            <p class="eyebrow">Expected December 2028</p>
+            <h2>B.S. Computer Engineering</h2>
+            <p>Milwaukee School of Engineering · Intended M.S. in Machine Learning · GPA 3.4</p>
+          </div>
+          <div class="community-list reveal">
+            <div><strong>AI Club</strong><span>Executive Board Treasurer, mentor, and participant</span></div>
+            <div><strong>Alpha Omega Epsilon</strong><span>Recruitment Committee Head and member</span></div>
+            <div><strong>Choir</strong><span>Alto singer · ILMEA Senior Choir participant</span></div>
+            <div><strong>Spanish</strong><span>State Commendation of Biliteracy</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <p class="eyebrow reveal">Contact</p>
+        <h2 class="reveal">Let’s connect.</h2>
+        <p class="reveal">The best ways to reach me are email and LinkedIn.</p>
+        <div class="contact-links reveal">
+          <a href="mailto:avalatoria0913@gmail.com">avalatoria0913@gmail.com</a>
+          <a href="https://www.linkedin.com/in/ava-latoria/" target="_blank" rel="noreferrer">linkedin.com/in/ava-latoria</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Ava Latoria</p>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
