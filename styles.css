@@ -107,6 +107,8 @@ h1 { margin: 0 0 22px; font-size: clamp(4rem, 8vw, 7.4rem); letter-spacing: -0.0
 .project-card-image.fit-photo img { object-fit: contain; padding: 8px; }
 .project-card-image.logo-cover img { object-fit: contain; padding: 18px; }
 .project-card-image.donorex-card-cover img { padding: 10px 24px; }
+.project-card-image.portrait-card-cover::before { content: ""; position: absolute; inset: -18px; background: linear-gradient(rgba(244, 239, 255, .34), rgba(255, 255, 255, .28)), var(--cover-image) center / cover no-repeat; filter: blur(14px); opacity: .72; }
+.project-card-image.portrait-card-cover img { z-index: 1; object-fit: contain; padding: 8px; }
 .project-card-body { display: flex; flex: 1; flex-direction: column; align-items: flex-start; padding: 22px; }
 .project-card-date { color: var(--muted); font-size: .76rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 .project-card h2 { margin: 8px 0 10px; font-size: clamp(1.4rem, 2vw, 1.8rem); }
